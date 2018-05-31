@@ -1,7 +1,8 @@
 Hypoellipse Running for ElementaryOS (Ubuntu Based)
 
 This script is originally from John Lahr's and Fred Klein
-I edited some of '.f' files so the code can compiled and run in Linux.
+I edited some of line in '.f' files so the code can compiled and run in Linux, especially in ttgen.
+
 
 This directory contains :
 - source and executable files for HYPOELLIPSE
