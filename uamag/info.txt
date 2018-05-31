@@ -1,5 +1,0 @@
-The program prm2bin_cal converts an ASCII calibration file into
-a binary file for use with the UNIX version of Hypoellipse.
-
-The program bin2prm_cal will convert a binary file back into
-ASCII format.
