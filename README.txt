@@ -1,38 +1,28 @@
-UNIX Version of HYPOELLIPSE
+Hypoellipse Running for ElementaryOS (Ubuntu Based)
 
-This directory contains source and executable files for HYPOELLIPSE, examples of two program runs, 
-files for creating local travel-time tables for use with HYPOELLIPSE, files for reformatting 
-University of Alaska station calibrations, and code for updating the format of an old station list.  
+This script is originally from John Lahr's and Fred Klein
+I edited some of '.f' files so the code can run in Linux.
 
-The following is a list of sub-directories with a description of their contents:
+This directory contains :
+- source and executable files for HYPOELLIPSE
+- examples of datasets for program runs
+- files for creating local travel-time tables for use with HYPOELLIPSE
 
-source
-	Source files for HYPOELLIPSE and Makefile for compiling the source components.  The latest 
-	revision to the source files was made on 2/9/2000.  
 
-hypoel
-	UNIX-executable HYPOELLIPSE file.
+To compile source files you can use command :
 
-	Note that Makefile for the SUN version allows two different versions of HYPOELLIPSE to be 
-	compiled.  One works with Xpick through sockets; the other is the stand-alone version. The 
-	executable code included here is the non-Xpick version and was compiled with the -Bstatic 
-	option so that FORTRAN libraries will not be needed to run it.
+cd ./source
+make
 
-quickrun
-	An example of a HYPOELLIPSE test run as described in the Quick-Start Manual.
+for compiling the Hypoellipse, and
 
-samplerun
-	An example of a final HYPOELLIPSE run on Alaska data.
+cd ./ttgen
+make
 
-ttgen
-	Files to compile and run TTGEN, a program for creating local, flat-earth, travel-time tables 
-	for use with HYPOELLIPSE.
+for compiling ttgen (travel times generator) code.
 
-uamag
-	Files for reformatting calibration files for University of Alaska-style magnitude computations.
 
-y2ksta
-	Source and executable codes for updating the format of an old station list with time-dependent 
-	parameters that was in use before 1999.
+for details, you can go to the website
+http://jclahr.com/science/software/hypoellipse/contents.html
 
 
