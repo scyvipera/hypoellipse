@@ -10,6 +10,10 @@ This directory contains :
 - files for creating local travel-time tables for use with HYPOELLIPSE
 
 
+You need :
+- gfortran
+- c compiler
+
 To compile source files you can use command :
 
 cd ./source
