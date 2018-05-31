@@ -1,0 +1,67 @@
+! Top of models is at 3 km above sea level
+! Model 1: GULF OF ALASKA 
+VELOC   1       1       5.        0.0       0.
+VELOC   1       2       6.8       10.0      0.
+VELOC   1       3       8.1       15.5      0.
+
+! Model 2: SOUTH OF 62.5 N (Except for volcanic axis & Gulf of AK)
+VELOC   2       1  5.3        0.0      0.
+VELOC   2       2  5.6        7.0      0.
+VELOC   2       3  6.2       13.0      0.
+VELOC   2       4  6.9       18.0      0.
+VELOC   2       5  7.4       23.0      0.
+VELOC   2       6  7.7       28.0      0.
+VELOC   2       7  7.9       36.0      0.
+VELOC   2       8  8.1       50.0      0.
+VELOC   2       9  8.3       68.0      0.
+
+! Model 3: NORTH OF 62.5 N
+VELOC   3       1  5.9        0.0      0.
+VELOC   3       2  7.40      27.4      0.
+VELOC   3       3  7.90      43.2      0.
+VELOC   3       4  8.29      79.0      0.
+VELOC   3       5 10.40     304.0      0.
+VELOC   3       6 12.60     548.0      0.
+
+! Model 4 (and 5 for S): VOLCANIC AXIS - Redoubt through Iliamna
+VELOC   4       1  2.90       0.0      1.80
+VELOC   4       2  5.10       1.3      1.80
+VELOC   4       3  6.40       4.5      1.72
+VELOC   4       4  7.00       20.0     1.780
+
+! Model 6 (and 7 for S): VOLCANIC AXIS - Spurr
+VELOC   6       1  5.1        0.0      1.81
+VELOC   6       2  5.5        1.0      1.81
+VELOC   6       3  6.3        8.25     1.74
+VELOC   6       4  7.2       30.25     1.78
+
+! Model 8 (and 9 for S): VOLCANIC AXIS - Augustine
+VELOC   8       1  2.3        0.0      1.80
+VELOC   8       2  2.6        2.3      1.80
+VELOC   8       3  3.4        3.0      1.80
+VELOC   8       4  5.1        4.0      1.80
+VELOC   8       5  6.3       12.0      1.78
+VELOC   8       6  8.0       47.0      1.78
+
+! Model 10: Akutan5 model
+!  linear increase over half-space (developed by Jolly, Power and Lahr
+!    in May/June(?) '96)
+VELOC  10       1  2.30       0.0      1.80
+VELOC  10       2  0.37       1.0      1.80
+VELOC  10       3  10.0       2.0      1.80
+VELOC  10       4  6.30       3.0      1.80
+VELOC  10       5  200.       4.0      1.80
+
+! Model 11: Pavlof/Dutton model
+!  layer 1 is from McNutt, BSSA, v. 76, p 153-175, 1986.
+!  lower layers from McNutt and Jacob, JGR, v. 91, p. 5013-5022, 1986.
+!   (note that layer depths are adjusted for reference depth at -3 km)
+!  vp/vs arbitrary for now - cds 07/22/96
+VELOC  11       1  3.05       0.0      1.78
+VELOC  11       2  3.44       3.0      1.78
+VELOC  11       3  5.56      4.79      1.78
+VELOC  11       4  6.06      6.65      1.78
+VELOC  11       5  6.72     13.18      1.78
+VELOC  11       6  7.61     25.63      1.78
+VELOC  11       7  7.90     41.51      1.78
+

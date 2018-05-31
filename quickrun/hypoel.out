@@ -1,0 +1,262 @@
+ *** Hypoellipse: Unix/Non-Xpick/Y2K version 3.9 11/1/2001  ***
+  Configured for up to 1024 stations in station list
+  and up to 1501 records per earthquake.
+  Run on 01/11/01 at 11:54
+ jump headopts.prm                                                                                             
+ arrival-time record blank source fields will be assumed to be source "d"
+
+
+                                          regional network processing parameters               
+
+ input extra calibration curves.
+
+ qspa( 9) -4.07-3.74-3.47-3.04-2.60-2.35-2.07-1.71-1.42-1.14-0.88-0.65-0.43-0.20 0.00 0.20 0.39 0.57 0.73 0.85
+           0.94 1.02 1.11 1.19 1.29 1.38 1.46 1.54 1.62 1.68 1.69 1.67 1.54 1.39 1.09 0.86 0.56 0.23-0.34-0.66
+
+ qspa(10) -1.13-0.90-0.73-0.40-0.06 0.08 0.27 0.53 0.72 0.90 1.06 1.19 1.32 1.45 1.56 1.68 1.80 1.91 2.00 2.08
+           2.14 2.20 2.26 2.34 2.42 2.52 2.59 2.69 2.78 2.86 2.94 3.02 3.03 3.06 2.95 2.88 2.66 2.34 1.68 1.25
+
+ qspa(11) -1.13-0.90-0.73-0.40-0.06 0.08 0.27 0.53 0.72 0.90 1.06 1.19 1.32 1.45 1.56 1.68 1.80 1.91 2.00 2.08
+           2.14 2.19 2.26 2.33 2.42 2.51 2.58 2.67 2.75 2.83 2.89 2.95 2.94 2.95 2.83 2.80 2.69 2.57 2.20 2.08
+
+ qspa(12) -2.44-2.22-2.04-1.71-1.37-1.23-1.04-0.78-0.59-0.41-0.25-0.12 0.01 0.14 0.25 0.37 0.48 0.60 0.69 0.77
+           0.83 0.89 0.95 1.03 1.11 1.20 1.28 1.37 1.46 1.55 1.63 1.71 1.72 1.75 1.64 1.56 1.35 1.03 0.37-0.06
+
+ qspa(13) -0.95-0.72-0.55-0.22 0.12 0.27 0.45 0.71 0.90 1.09 1.25 1.38 1.51 1.64 1.75 1.86 1.98 2.09 2.19 2.26
+           2.32 2.38 2.44 2.52 2.60 2.69 2.76 2.85 2.94 3.01 3.07 3.13 3.12 3.13 3.02 2.98 2.88 2.76 2.38 2.26
+
+ qspa(14)  0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.00 0.29 0.43 0.56 0.68 0.79 0.89 0.98 1.07 1.14
+           1.21 1.28 1.36 1.44 1.54 1.63 1.73 1.82 1.92 2.01 2.09 2.15 2.10 1.88 1.55 1.17 0.77 0.00 0.00 0.00
+ select delays based on closest station.
+ global minimum search turned on
+ compress printed output.  code =  0
+
+ ignore sum code =     0
+ (ignore starting locations on summary records)
+ do not scan for missing stations.  code =   1
+ subroutine input1 found end of file on unit    12
+ jump headopts.vol                                                                                             
+
+
+                                      volcano network processing                               
+ subroutine input1 found end of file on unit    12
+ jump crustal.prm                                                                                              
+ subroutine input1 found end of file on unit    12
+ list of stations available for these solutions
+                                      volcano network processing                               
+ begin station list +1 19960101                                                  
+ station list code =    1
+ set up for events starting on 19960101
+ name latitude  longitude  elev p thickness p p  pdy1 sdy1  pdy2 sdy2  pdy3 sdy3  pdy4 sdy4  pdy5 sdy5     calr xmgc mgwt fmgc wt 
+ * continuation  record *      thk 1   2  mod dly                                                      sys                     ps
+  polarity stawt teldy code altdy cnyrmody hr
+  ak1z 54   8.15 165  46.20   12 1 0.000.00  1 1  0.00 0.00  0.00 0.00  0.00 0.00  0.00 0.00  0.00 0.00 18  0.00 0.00 1 1 1.00 1010
+ *           1.0  0.00       0.00 99999999 99
+  ak2z 54   7.45 165  46.70   90 1 0.000.00  1 1  0.00 0.00  0.00 0.00  0.00 0.00  0.00 0.00  0.00 0.00 18  0.00 0.00 1 1 1.00 1010
+ *           1.0  0.00       0.00 99999999 99
+  ak3z 54   8.15 165  46.20   12 1 0.000.00  1 1  0.00 0.00  0.00 0.00  0.00 0.00  0.00 0.00  0.00 0.00 18  0.00 0.00 1 1 1.00 1010
+ *           1.0  0.00       0.00 99999999 99
+  ak4z 54   6.60 165  43.90  135 1 0.000.00  1 1  0.00 0.00  0.00 0.00  0.00 0.00  0.00 0.00  0.00 0.00 18  0.00 0.00 1 1 1.00 1010
+ *           1.0  0.00       0.00 99999999 99
+  ak5z 54   9.31 165  51.90  225 1 0.000.00  1 1  0.00 0.00  0.00 0.00  0.00 0.00  0.00 0.00  0.00 0.00 18  0.00 0.00 1 1 1.00 1010
+ *           1.0  0.00       0.00 99999999 99
+  akte 54   8.15 165  46.20   12 1 0.000.00  1 1  0.00 0.00  0.00 0.00  0.00 0.00  0.00 0.00  0.00 0.00 18  0.00 0.00 1 1 1.00 1010
+ *           1.0  0.00       0.00 99999999 99
+  aktn 54   8.15 165  46.20   12 1 0.000.00  1 1  0.00 0.00  0.00 0.00  0.00 0.00  0.00 0.00  0.00 0.00 18  0.00 0.00 1 1 1.00 1010
+ *           1.0  0.00       0.00 99999999 99
+  aktz 54   8.15 165  46.20   12 1 0.000.00  1 1  0.00 0.00  0.00 0.00  0.00 0.00  0.00 0.00  0.00 0.00 18  0.00 0.00 1 1 1.00 1010
+ *           1.0  0.00       0.00 99999999 99
+                                       volcano network processing                               
+
+       test variables              description
+     standard  reset to
+  1    1.7800    1.7800    ratio of p-wave velocity to s-wave velocity.
+  2    5.0000   -1.0000****lt 0 no elev cor/ =0 use 1st vel/ gt 0 use this.
+  3    0.0000    0.0000    first trial latitude in degrees.
+  4    0.0000    0.0000    first trial longitude in degrees.
+  5  -99.0000    5.0000****first trial depth in kilometers, unless = -99.
+  6    0.0000   -1.0000****sphere rad for aux rms values. if neg cont iteration at most neg point.
+  7   10.0000 -100.0000****minimum number of first motions required to plot.
+  8    0.0000    3.0000****elevation of top of layered models (km).
+  9    0.0000    1.0000****if 0 allow neg depths in summary and archive files.
+ 10   50.0000    5.0000****apply distance weighting on this iteration.
+ 11   50.0000  100.0000****xnear = greatest distance with weight of 1.0
+ 12  100.0000  150.0000****xfar = least distnace with weight of 0.0
+ 13   50.0000   50.0000    apply azimuthal weighting on this iteration.
+ 14   50.0000   50.0000    weight out large residuals on this iteration.
+ 15   10.0000    5.0000****give zero weight to residuals gt this.
+ 16   50.0000   50.0000    apply boxcar weighting on this iteration.
+ 17    2.0000    2.0000    give zero weight to residuals gt this*stand. dev.
+ 18   50.0000   50.0000    begin jeffreys weighting on this iteration.
+ 19    0.0500    0.0500    use jeffreys weighting only if rms gt this.
+ 20    0.0500    0.0500    mu of jeffreys weighting funct.
+ 21    9.0000   15.0000****maximum number of iterations.
+ 22   35.0000    3.0000****limit change in focal depth to this amount (km).
+ 23    0.7000    0.7000    if delz would make z neg, set delz = -this*z (km).
+ 24   35.0000   35.0000    limit change in epicenter to this. (km).
+ 25   40.0000  150.0000****fix depth if epicentral change gt this. (km).
+ 26    0.0025    0.0000****stop iterating if square of adjustment lt this.
+ 27   20.0000    4.0000****global opt: if deep solution z > this, continue with z 1/2 way to surface.
+ 28    0.0000   -1.0000****for fixed hypo on plane, set = plunge azimuth.  if neg. continue as free sol.
+ 29   -0.1000   -0.0700****set std err of res=+this if degrees of freedom =0 or =-this if this lt 0.
+ 30    0.0000    0.0000    dip of plunge vector for epi. fixed on plane.  see test(28) & (47) also.
+ 31   -1.1500   -1.1500    duration magnitude c1, constant.
+ 32    2.0000    2.0000    duration magnitude c2, *log((f - p)*fmgc).
+ 33    0.0000    0.0000    duration magnitude c3, *delta.
+ 34    0.0000    0.0000    if not 0, scale the normal equations.
+ 35    0.0010    0.0000****minimum damping of normal equations.  
+ 36  100.0000  100.0000    maximum first trial depth if computed from p-arrival times.
+ 37    3.0000    5.0000****if termination occurs before this iteration, set iteration number to this and continue.
+ 38    0.0000    2.0000****if this =1, run all with and then without s/ =2,run with s/ =3, run without s/ =4, fix hypo
+                              / neg, use s to fix origin.
+ 39    1.0000    1.0000    multiply the s and s-p weights by this factor.
+ 40    0.0070    0.0070    duration magnitude c4, *depth.
+ 41    0.0000    0.0000    if this =1, print opt. ge 1, & summary opt. =+ or -1, then write sum. record each itteration.
+ 42   75.0000   15.0000****global opt: deep starting z wrt top of model.
+ 43    0.0000    0.0000    duration magnitude c5, *(log((f - p)*fmgc)**2).
+ 44    0.0000    1.0000****if =1 rerun debug eqs with critical sta/ =2 continue iter with crit sta.
+ 45    0.1379    0.1061****x scale factor for focal mechanism plot.
+ 46    0.0000  -15.0000****xfar set ge dist of test(46)th station + 10.  if lt 0 then fill gap.
+ 47    0.0000    0.0000    weight for fix on plane.  see test(28) and (30).
+ 48    6.5000    6.5000    half-space velocity for first trial location.
+ 49    0.0000    1.0000****if .ne. 0 calculate vp/vs ratio; if abs val >1 make wadati plot; if neg, use wadati origin in solution.
+ 50    0.0000    0.0000    for exploring rms space, compute this number of fixed depth solutions (up to 22).
+
+ 51 1000.0000 1000.0000    for epicentral distance beyond this, use first travel-time table.
+ 52 2800.0000 2800.0000    Wood Anderson static magnification assumed for local magnitude determination.
+ 53    1.0000    1.0000    if .eq. 1 stations with 4-letter codes ending e or n treated as horizontals.
+ 54  200.0000  200.0000    if 1st computed trial location > this (km) from closest station, start at closest station.
+ 55   19.0000   19.0000****assumed century for events without summary record.
+
+ weight option - relative standard errors for code:   0      1      2      3
+                                                     1.000  5.000 10.000 20.000
+
+ printer option    0   summary option     2      magnitude option    4      tabulation option  4
+
+ no event output  -2
+ one line/eq      -1
+ final solution    0   no sum records     0      use xmag            0      no summary        0
+ one line per iter 1   summary records    1      use fmag            1      a                 1
+ sta res each iter 2   sum + archive file 2      use (xmag+fmag)/2   2      a + b             2
+ regres each iter  3   archive file       3      prefer fmag /xmag   3      a,b + c           3
+                       "corrected" input  4      prefer xmag /fmag   4      a,b,c + d         4
+                                                 if neg use fms not fmp     positive/q from std errors
+                                                                            negative/q from sol+sta
+ u of a cal data file:  caldata.bin                                       
+ make compensating change in layer below variable layer.
+
+
+       velocity model  1
+   layer  velocity     depth   thickness    vpvs  
+           km/sec       km        km
+
+     1       2.300     0.000     1.000     1.800
+     2       0.370     1.000     1.000     1.800
+     3      10.000     2.000     1.000     1.800
+     4       6.300     3.000     1.000     1.800
+     5     200.000     4.000  1000.000     1.800
+
+
+       velocity model  2
+   layer  velocity     depth   thickness    vpvs  
+           km/sec       km        km
+
+     6       2.900     0.000     1.300     1.800
+     7       5.100     1.300     3.200     1.800
+     8       6.400     4.500    15.500     1.720
+     9       7.000    20.000  1000.000     1.780
+
+
+ the next model is for s only:
+
+
+       velocity model  3
+   layer  velocity     depth   thickness    vpvs  
+           km/sec       km        km
+
+    10       1.611     0.000     1.300     0.000
+    11       2.833     1.300     3.200     0.000
+    12       3.721     4.500    15.500     0.000
+    13       3.933    20.000  1000.000     0.000
+ jump to akutan.pha                                        
+                                              ----------------------------------------------------------------
+                                              ----------------------------------------------------------------
+                                              ----------------------------------------------------------------
+ 96/04/23    06:51        volcano network processing                               
+ bi-weight vp/vs =    2.016 +/- 0.349 based on     3 stations with p and s
+ *** experiencing convergence problems, 
+         -az/dp--step---se =az/dp==step===se -az/dp--step---se
+         183/ 7 .0235 .926 278/36 -5.45 7.47  83/53 -.010 .300                                                                       
+ C*       YrMoDyHrMn P-Sec      S-Sec        Amp Per                                                Data Source     
+ C*(F) 960423065129i.                                                                                               
+ C*(C) Any record starting with C* is a comment.                                                                    
+
+ horizontal and vertical single variable standard deviations (68% - one degree of freedom; max 99 km)
+       seh =   0.49             seh =   3.25             sez =   2.33   quality = c
+       az  =     8.             az  =   -82.
+
+ se of orig =   0.09; # of iterations =   7; dmax =     150.00; sequence number =      
+ event type = " "; processing status = " "
+ s minus p interval for closest station =       2.34
+
+    date    origin      lat      long    depth    mag no d1 gap d  rms    avwt   se
+ 19960423  651 54.22 54n 7.02 165w57.99  -3.00  1.098 10  8 325 1 0.0962  1.00  0.07
+                     54.1169  165.9665
+    seh  sez q sqd  adj in nr   avr  aar nm avxm mdxm sdxm nf avfm mdfm sdfm   vpvs
+    3.2  2.3 d d d 0.01 10 11 .0000 .088  4 1.10 1.03  0.3  0            0.0  2.016
+
+                      -- travel times and delays --
+  stn c pha remk p p-sec s-sec resid  std-er   dist  azm ain    tc c vthk  ttob-ttcal-dlay-edly=resid rmk stn pha sources
+  ak5 z     IZd0 d  5712        0.02    0.07    7.9   57  43       1       2.90  2.88            0.02     ak5            
+  ak5 z s   es 1         5946   0.05    0.35              43       1       5.24  5.19            0.05     ak5 s  
+  ak2 z     eZ.0    5830       -0.05    0.07   12.3   86  38       1       4.08  4.13           -0.05     ak2            
+  ak2 z s   es 1         6155  -0.11    0.35              38       1       7.33  7.44           -0.11     ak2 s  
+  ak3 z     EZ-0 -  5845       -0.07    0.07   13.0   81  37       1       4.23  4.30           -0.07     ak3            
+  akt z     eZ.0    5863        0.11    0.07   13.0   81  37       1       4.41  4.30            0.11     akt            
+  akt n      N 4              -99.99   -----   13.0   81  37       1     ******  4.30          -99.99     akt            
+  akt n s   es 0        18183  -0.14    0.07              37       1       7.61  7.75           -0.14     akt s  
+  ak1 z     eZ.0    5843       -0.09    0.07   13.0   81  37       1       4.21  4.30           -0.09     ak1            
+  ak1 z s   es 0         6211   0.14    0.07              37       1       7.89  7.75            0.14     ak1 s  
+  ak4 z     eZ.0    5922        0.08    0.07   15.4   93  34       1       5.00  4.92            0.08     ak4            
+
+                                     -- magnitude data --
+  stn c source sys    c10   amx gr ink     amf    per   unit/mm  gnd mot u xmgc xmag  fmp fmag
+  ak5 z        18    7.75  1949           1949.  0.06 7.7546E+06 2.513E-01 0.00 .815           
+  ak2 z        18    2.86   563            563.  0.08 2.8634E+06 1.966E-01 0.00 1.02           
+  ak3 z        18    1.58   904            904.  0.05 1.5784E+06 5.727E-01 0.00 1.52           
+  ak1 z        18    1.15   218            218.  0.06 1.1510E+06 1.894E-01 0.00 1.04           
+ depth may decrease by       0.00 or increase by       0.95 given a reading 
+ standard error of    0.070 and rms limit of   0.099
+ jump back to main input stream.
+
+ sound bell 
+  completed reading input phase file
+ average rms of all events =    0.09622
+ average vp/vs ratio =       2.02 for    1 events.  standard deviation of ratio =       0.00
+
+ ***** class/     a     b     c     d total *****
+
+      number/   0.0   0.0   1.0   0.0   1.0
+
+  percentage/   0.0   0.0 100.0   0.0
+
+   include only class d and better in the following statistics.
+
+          ----------- p residuals --------------    ----------- s residuals -------------
+           no event wting        event wting         no event wting        event wting
+ station  n  wt  ave   sd     n   wt  ave   sd      n  wt   ave  sd     n   wt   ave  sd    station
+    ak1z   1 1.0-0.092 0.000   1  6.0-0.092 0.000    1 1.0 0.145 0.000   1  6.0 0.145 0.000    ak1
+    ak2z   1 1.0-0.051 0.000   1  6.0-0.051 0.000    1 0.0-0.107 0.000   1  0.2-0.107 0.000    ak2
+    ak3z   1 1.0-0.072 0.000   1  6.0-0.072 0.000    0 0.0 0.000 0.000   0  0.0 0.000 0.000    ak3
+    ak4z   1 1.0 0.082 0.000   1  6.0 0.082 0.000    0 0.0 0.000 0.000   0  0.0 0.000 0.000    ak4
+    ak5z   1 1.0 0.019 0.000   1  6.0 0.019 0.000    1 0.0 0.052 0.000   1  0.2 0.052 0.000    ak5
+    aktn   0 0.0 0.000 0.000   0  0.0 0.000 0.000    1 1.0-0.135 0.000   1  6.0-0.135 0.000    akt
+    aktz   1 1.0 0.108 0.000   1  6.0 0.108 0.000    0 0.0 0.000 0.000   0  0.0 0.000 0.000    akt
+
+           s-p residuals        x-mag res       f-mag res
+ station  n  wt  ave   sd     n  ave   sd     n  ave   sd
+    ak1z   0 0.0 0.000 0.000   1-0.059 0.000   0 0.000 0.000
+    ak2z   0 0.0 0.000 0.000   1-0.081 0.000   0 0.000 0.000
+    ak3z   0 0.0 0.000 0.000   1 0.422 0.000   0 0.000 0.000
+    ak5z   0 0.0 0.000 0.000   1-0.283 0.000   0 0.000 0.000
+ irelo =   0 nreloc =   0

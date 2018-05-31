@@ -1,0 +1,10 @@
+JUMP headopts.prm
+JUMP crustal.prm
+UOFACAL OPTION    caldata.bin
+MAGNITUDE OPTION     3
+CONSTANTS NOPRINT    1
+BEGIN STATION LIST -1 19870101
+JUMP stations.dat
+printer option       1
+ARRIVAL TIMES NEXT
+jump 871101114127p

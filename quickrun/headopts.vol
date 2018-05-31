@@ -1,0 +1,45 @@
+! For volcano processing, jump to headopts.prm (the network
+! processing control file) and then jump to headopts.vol
+! (this file) for the special modifications used for routine 
+! volcano processing.   jcl 3/25/95
+!
+header content       Volcano Network Processing
+!
+!     test          5   -1.0000    first trial depth in kilometers, unless neg.
+!				   aeic uses 30.0, avo uses 5.0
+reset test          5   5.0
+!
+!     test          6   0.0000     radius for aux rms values. if neg cont
+!                                  iteration at most neg point.
+!				   aeic uses 0.0, avo uses -1.0
+reset test          6   -1.0
+!
+!     test         21    9.0000    maximum number of iterations.
+!				   aeic uses 20.0, avo uses 15.0
+reset test         21   15.
+!
+!     test         22   35.0000    limit change in focal depth to this (km).
+!     test         22   20.0       aeic uses 20.0, avo uses 3.0
+reset test         22    3.0
+!
+!     test         27   20.0       global solution: if deep solution converges
+!                                  below this, then continue with z=this/2.0.
+!				   aeic uses 20.0, avo uses 4.0
+reset test         27    4.0
+!
+!     test         28    0.0000    for fixed hypo on plane, set = plunge
+!                                  azimuth.  if neg. continue as free sol.
+!				   aeic uses 0.0, avo uses -1.0
+reset test         28   -1.
+!
+!     test         29    -.16      set std err of res=+this if degrees of
+!                                  freedom =0 or =-this if this lt 0.
+!				   changed from -.1 to -.07 on 1/21/92  jcl
+!				   aeic uses -0.1, avo uses -0.07
+reset test         29  -.07
+!
+!     test         42   75.0       global solution deep starting depth (km wrt sea level)
+!				   aeic uses 75.0, avo uses 15.0
+reset test         42   15.0
+
+! end of headopts.vol

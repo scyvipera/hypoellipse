@@ -1,0 +1,42 @@
+ root name = hypoe
+ Thu Nov  1 11:54:16 2001
+ global minimum search turned on
+ subroutine input1 found end of file on unit    12
+ subroutine input1 found end of file on unit    12
+ subroutine input1 found end of file on unit    12
+ constants print =     0
+ constants print =     1
+ Thu Nov  1 11:54:16 2001
+ jump to akutan.pha                                        
+ about to call getbin to read unit   24
+ just read   6 records
+ jump back to main input stream.
+  completed reading input phase file
+ average rms of all events =    0.09622
+ average vp/vs ratio =       2.02 for    1 events.  standard deviation of ratio =       0.00
+
+ ***** class/     a     b     c     d total *****
+
+      number/   0.0   0.0   1.0   0.0   1.0
+
+  percentage/   0.0   0.0 100.0   0.0
+
+   include only class d and better in the following statistics.
+
+          ----------- p residuals --------------    ----------- s residuals -------------
+           no event wting        event wting         no event wting        event wting
+ station  n  wt  ave   sd     n   wt  ave   sd      n  wt   ave  sd     n   wt   ave  sd    station
+    ak1z   1 1.0-0.092 0.000   1  6.0-0.092 0.000    1 1.0 0.145 0.000   1  6.0 0.145 0.000    ak1
+    ak2z   1 1.0-0.051 0.000   1  6.0-0.051 0.000    1 0.0-0.107 0.000   1  0.2-0.107 0.000    ak2
+    ak3z   1 1.0-0.072 0.000   1  6.0-0.072 0.000    0 0.0 0.000 0.000   0  0.0 0.000 0.000    ak3
+    ak4z   1 1.0 0.082 0.000   1  6.0 0.082 0.000    0 0.0 0.000 0.000   0  0.0 0.000 0.000    ak4
+    ak5z   1 1.0 0.019 0.000   1  6.0 0.019 0.000    1 0.0 0.052 0.000   1  0.2 0.052 0.000    ak5
+    aktn   0 0.0 0.000 0.000   0  0.0 0.000 0.000    1 1.0-0.135 0.000   1  6.0-0.135 0.000    akt
+    aktz   1 1.0 0.108 0.000   1  6.0 0.108 0.000    0 0.0 0.000 0.000   0  0.0 0.000 0.000    akt
+
+           s-p residuals        x-mag res       f-mag res
+ station  n  wt  ave   sd     n  ave   sd     n  ave   sd
+    ak1z   0 0.0 0.000 0.000   1-0.059 0.000   0 0.000 0.000
+    ak2z   0 0.0 0.000 0.000   1-0.081 0.000   0 0.000 0.000
+    ak3z   0 0.0 0.000 0.000   1 0.422 0.000   0 0.000 0.000
+    ak5z   0 0.0 0.000 0.000   1-0.283 0.000   0 0.000 0.000

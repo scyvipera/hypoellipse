@@ -1,0 +1,198 @@
+! begin headopts.prm
+
+!usgs used blank source *
+!uagi uses blank source %
+blank source            *
+          
+!usgs vax  header content     usgs vax standard processing
+!usgs sun  header content     usgs sun standard processing
+!uagi vax  header content     uagi vax standard processing
+!uagi sun  header content     uagi sun standard process ing 
+header content           usgs sun standard processing headopts.prm
+
+!uagi and usgs-sun place uofacal option within script file
+!uofacal option            pub1:[alaska.bina]uofacal.dat
+!uofacal option    /we/src/hypo/control/caldata.bin
+
+constants noprint         0
+!to temporarily allow full printout, use constants print    1:
+!constants noprint         1 
+
+
+calibration        5
+-407-374-347-304-260-235-207-171-142-114 -88 -65 -43 -20   0.198.391.574.725.848
+.943 102 111 119 129 138 146 154 162 168 169 167 154 139 109.856.555.234 -34 -66
+-113 -90 -73 -40  -6.084.267.529.719.904 106 119 132 145 156 168 180 191 200 208
+ 214 220 226 234 242 252 259 269 278 286 294 302 303 306 295 288 266 234 168 125
+-113 -90 -73 -40  -6.084.267.529.719.904 106 119 132 145 156 168 180 191 200 208
+ 214 219 226 233 242 251 258 267 275 283 289 295 294 295 283 280 269 257 220 208
+-244-222-204-171-137-123-104 -78 -59 -41 -25 -12.012.141.251.368.484.599.692.768
+.828.886.950 103 111 120 128 137 146 155 163 171 172 175 164 156 135 103.371  -6
+ -95 -72 -55 -22.123.267.450.713.903 109 125 138 151 164 175 186 198 209 219 226
+ 232 238 244 252 260 269 276 285 294 301 307 313 312 313 302 298 288 276 238 226
+
+! test variables   #   default    definition
+!     test          1    1.7800    ratio of p-wave velocity to s-wave velocity.
+!     test          2    5.0000    lt 0 no elev cor/ =0 use 1st vel/ 
+!                                  gt 0 use this.  use only if test(8)=0.
+reset test          2   -1.
+!     test          3    0.0000    first trial latitude in degrees, unless zero.
+!     test          4    0.0000    first trial longitude in degrees, unless zero
+!     test          5   -99.000    first trial depth in kilometers, unless = -99.
+reset test          5   30.
+!     test          6   0.0000     radius for aux rms values. if neg cont 
+!                                  iteration at most neg point.
+!     test          7   10.0000    minimum number first motions required to plot
+reset test          7  -25.
+!     test          8   0.0        elevation of top of layered velocity models
+reset test          8   3.0
+!     test          9   0.0        if not 0.0 set neg depths to -00
+reset test          9   1.0
+!Distance Weighting
+!     test         10   50.0000    begin distance weighting on this iteration.
+reset test         10    5.0
+!     test         11   50.0000    xnear = greatest distance with weight of 1.0
+reset test         11  100.
+!     test         12  100.0000    xfar = least distnace with weight of 0.0
+!                                  see test(46) also.
+reset test         12  150.
+!Azimuthal Weighting
+!     test         13   50.0000    begin azimuthal weighting on this iteration.
+!Truncation Weighting
+!     test         14   50.0000    begin weighting out large resids on this iter
+!     test         15   10.0000    give zero weight to residuals gt this.
+!Boxcar Weighting
+!     test         16   50.0000    begin boxcar weighting on this iteration.
+!     test         17    2.0000    give zero weight to resids gt this*stand. dev
+!Jeffrey's Weighting
+!     test         18   50.0000    begin jeffreys weighting on this iteration.
+!     test         19    0.0500    use jeffreys weighting only if rms gt this.
+!     test         20    0.0500    mu of jeffreys weighting funct.
+
+!     test         21    9.0000    maximum number of iterations.
+reset test         21   20.
+!     test         22   35.0000    limit change in focal depth to this (km).
+reset test         22   20.
+!     test         23    0.7000    if delz put eq above surface, move this fraction
+!                                  of the way to the surface.
+!     test         24   35.0000    limit change in epicenter to this. (km)
+!     test         25   40.0000    fix depth if epicentral change gt this. (km)
+reset test         25  150.
+!     test         26    0.0025    stop iterating if sq of adjustment lt this.
+reset test         26     .00001
+!     test         27   20.        if global deep solution converges below this depth
+!                                  continue at depth 1/2 way between this depth
+!                                  and the surface.
+!     test         28    0.0000    for fixed hypo on plane, set = plunge
+!                                  azimuth.  if neg. continue as free sol.
+!                                  see test(30) and test(47) also.
+!     test         29    -.1       set std err of res=+this if degrees of 
+!                                  freedom =0 or =-this if this lt 0.
+!     test         30    0.0000    if positive: dip of plunge vector for epi. fixed on 
+!                                  plane.  see test(28) & (47) also.
+!                                  if negative: fix epicenter and solve for origin and z.
+!                                    if test(28) is neg, continue with free solution.
+!     test         31   -1.1500    duration magnitude c1, constant
+!     test         32    2.0000    duration magnitude c2, *log((f - p)*fmgc)
+!     test         33    0.0000    duration magnitude c3, *delta
+!     test         34    0.0000    if not 0, scale the normal equations
+!     test         35    0.0010    minimum damping of normal equations
+reset test         35    0.00001
+!     test         36  100.0000    maximum first trial depth if computed from 
+!                                  p-arrival times.
+!     test         37    3.0000    if termination occurs before this iteration, 
+!                                  set iteration number to this and continue.
+reset test         37    5.
+!     test         38    0.0000    if this =1, run all with and then without s/ 
+!                                          =2, run with s/
+!                                          =3, run without s/ 
+!                                          =4, fix all at starting hypocenter, and use s.
+!                                         neg, use s to fix origin.
+reset test         38  2.0
+!     test         39    1.0000    multiply the s and s-p weights by this factor.
+!     test         40    0.0070    duration magnitude c4, *depth
+!     test         41    0.0000    if this =1, print opt. ge 1, & sum opt. =+ or
+!                                  -1, then write sum record each itteration.
+!     test         42   75.        global solution deep starting depth (km wrt sea level)
+!     test         43    0.0000    duration magnitude c5, *(log((f - p)*fmgc)**2)
+!usgs uses test(44) = 1.0
+!uagi uses test(44) = 0.0
+!     test         44    0.0000    if =1 rerun debug eqs with critical sta/ 
+!                                     =2 continue iter with crit sta/ 
+reset test         44    1.0
+!     test         45    0.1379    x scale factor for focal mechanism plot
+reset test         45    .10606 
+!     test         46    0.0000    xfar set ge dist of test(46)th station + 10.  
+!                                  if lt 0 then fill gap.
+reset test         46  -15.
+!     test         47    0.0000    wt for fix on plane.  see test(28) and (30).
+!     test         48    6.5       half-space velocity for 1st trial location
+!     test         49    0.0000    if .ne. 0 calculate vp/vs ratio; 
+!                                  if abs val >1 make wadati plot; 
+!                                  if neg, use wadati origin in solution.
+reset test         49    1.
+!     test         50    0.        compute this number of fixed depth
+!                                  solutions, for checking rms vs z.
+!     test         51    1000.     beyond this epicentral distance use first
+!                                  travel-time table model
+!     test         52    2800.     Wood-Anderson magnification used in XMAG 
+!                                  calculations.
+!     test         53    1.0       if equal 1, then assume stations with 
+!                                  4-letter codes ending with e or n are 
+!                                  horixontal stations.
+!     test         54    200.      if 1st computed trial epicenter is greater
+!                                  than this in km from closest station, start
+!                                  location at closest station.
+!     test         55    19.       default century
+! 
+!  printer option       summary option            magnitude option     
+! 
+!  no event output  -1
+!  final solution    0   no sum records     0      use xmag            0      
+!  one line per iter 1   summary records    1      use fmag            1      
+!  sta res each iter 2   sum + archive file 2      use (xmag+fmag)/2   2      
+!  regres each iter  3   archive file       3      prefer fmag/xmag    3      
+!                        'corrected' input  4      prefer xmag/fmag    4
+!                                                  if neg use fms not fmp
+
+!usgs uses printer option     1
+!uagi uses printer option     0
+printer option     1
+printer option     0
+
+!usgs uses summary option     3
+!uagi uses summary option     2
+summary option     2
+summary option     3
+
+!usgs uses magnitude option   3 for pre 1989 data, otherwise 4
+!uagi uses magnitude option   4
+magnitude option   4                                                                            
+!  quality option
+!  no summary      0
+!  a               1
+!  a & b           2
+!  a, b, & c       3
+!  a, b, c, & d    4
+quality option     4
+
+select delays       -1
+cyl.dly
+!usgs vax   pub1:[alaska.data]cyl.dly
+!usgs ags   /we/src/hypo/control/cyl.dly
+!uagi sun   /usr/dan2/hypoe89/cyl.dly
+
+
+global              0
+compress option     0
+! if ignore summary rec is 0, mag in col 35-36 is not saved is other than xmag
+ignore summary rec  1
+missing stations    0
+! turn off missing stations option with a 1:
+! missing stations    1
+!residual option    0
+!uagi does not use debug option, so add ! to next two records
+!debug option       3
+! max rms   1.00 pres 3.00 sres 3.00nwout   20 nmax   20 semx   25dzmin 0.
+
+! end of headopts.prm
